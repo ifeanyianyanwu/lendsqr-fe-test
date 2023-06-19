@@ -3,20 +3,39 @@ import SignInImg from "../../assets/signinImage.svg";
 import TextInput from "../../components/ui/TextInput/TextInput";
 import "./Login.scss";
 import { SyntheticEvent, useState } from "react";
+import { useNavigate } from "react-router-dom";
+
+type UserData = {
+  email: string;
+  password: string;
+};
 
 const Login = () => {
-  const [userCredentials, setUserCredentials] = useState({});
+  const [userCredentials, setUserCredentials] = useState<UserData>({
+    email: "",
+    password: "",
+  });
   const [passwordType, setPasswordType] = useState("password");
+  const navigate = useNavigate();
+
   const handleInputChange = (e: SyntheticEvent) => {
     const { name, value } = e.target as HTMLInputElement;
     setUserCredentials((prev) => ({ ...prev, [name]: value }));
   };
+
   const handleShowButtonClick = () => {
     setPasswordType((prev) => (prev === "password" ? "text" : "password"));
   };
+
   const handleSubmit = (e: SyntheticEvent) => {
     e.preventDefault();
+    if (!userCredentials.email || !userCredentials.password) {
+      alert("Please enter a valid Username and Password");
+      return;
+    }
+    navigate("/dashboard");
   };
+
   return (
     <div className="page-container">
       <div className="sign-in__image">
@@ -44,7 +63,7 @@ const Login = () => {
             </p>
           </TextInput>
           <p>FORGOT PASSWORD?</p>
-          <button>Log In</button>
+          <button type="submit">Log In</button>
         </form>
       </div>
     </div>
