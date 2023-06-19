@@ -1,0 +1,89 @@
+@import "../../styles/variables";
+
+//Mobile First View
+.page-container {
+  position: relative;
+  display: flex;
+  height: 100vh;
+  padding: 0;
+}
+.sign-in__image {
+  display: none;
+}
+
+.sign-in__form_container {
+  height: 100%;
+  flex: 0 0 100%;
+  display: grid;
+  place-items: center;
+  form {
+    // background-color: aqua;
+    padding: min(2rem, 5%);
+    width: min(90%, 60rem);
+    display: flex;
+    flex-direction: column;
+    gap: 1.8rem;
+    h1 {
+      color: $primary-color;
+      font-size: $fs-xxl;
+      line-height: 1;
+      font-family: Avenir Next Bold;
+    }
+    h4 {
+      font-size: $fs-lg;
+      font-weight: 400;
+      margin-bottom: 3rem;
+      color: $secondary-color;
+    }
+    p {
+      font-size: $fs-xs;
+      font-weight: 600;
+      color: $accent-color;
+      cursor: pointer;
+    }
+    button {
+      padding: 1.5rem;
+      font-size: $fs-sm;
+      text-transform: uppercase;
+      color: $white-color;
+      background-color: $accent-color;
+      border-radius: 0.8rem;
+      border: none;
+      outline: none;
+      margin-block: 1rem;
+    }
+  }
+}
+.password-show-btn {
+  color: $accent-color;
+  font-size: $fs-xs;
+  position: absolute;
+  top: 50%;
+  right: 1.5rem;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+//Desktop View
+@media (min-width: 850px) {
+  .page-container {
+    padding: 5rem;
+  }
+  .sign-in__image {
+    position: relative;
+    flex: 0 0 50%;
+    display: grid;
+    place-items: center;
+    img {
+      &:first-child {
+        position: absolute;
+        left: 0;
+        top: 0;
+      }
+      max-width: 100%;
+    }
+  }
+  .sign-in__form_container {
+    flex: 0 0 50%;
+  }
+}
