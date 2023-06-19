@@ -1,15 +1,21 @@
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+@font-face {
+  font-family: "Avenir Next";
+  src: local("Avenir Next"),
+    url("./fonts/AvenirNextLTPro-Regular.otf") format("woff");
+}
+@font-face {
+  font-family: "Avenir Next Bold";
+  src: local("Avenir Next Bold"),
+    url("./fonts/AvenirNextLTPro-Bold.otf") format("woff");
+}
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: Avenir Next, Poppins, sans-serif;
+}
+html {
+  font-size: 62.5%;
 }
