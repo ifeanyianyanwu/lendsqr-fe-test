@@ -4,9 +4,8 @@ import { DashBoard, Login } from "./pages";
 function App() {
   return (
     <div className="App">
-      <Navigate to="/login" />
       <Routes>
-        <Route path="/login" element={<Login />} />
+        <Route path="/" element={<Login />} />
         <Route path="/dashboard" element={<DashBoard />} />
       </Routes>
     </div>
