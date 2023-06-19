@@ -1,0 +1,23 @@
+@import "../../../styles/variables.scss";
+.container {
+  label {
+    font-size: $fs-sm;
+    color: $secondary-color;
+  }
+}
+.input-container {
+  position: relative;
+  input {
+    font-size: $fs-sm;
+    width: 100%;
+    padding: 1.5rem;
+    border-radius: 0.8rem;
+    outline: none;
+    border: 1px solid $secondary-color;
+
+    &::placeholder {
+      font-size: $fs-sm;
+      color: $secondary-color;
+    }
+  }
+}
