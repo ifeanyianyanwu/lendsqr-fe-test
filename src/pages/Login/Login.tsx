@@ -33,7 +33,7 @@ const Login = () => {
       alert("Please enter a valid Username and Password");
       return;
     }
-    navigate("/dashboard");
+    navigate("/dashboard/users");
   };
 
   return (
