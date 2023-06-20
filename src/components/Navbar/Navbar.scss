@@ -1,0 +1,124 @@
+@import "../../styles/variables.scss";
+
+.navbar__container {
+  display: flex;
+  padding-block: 2rem;
+  box-shadow: 3px 0px 20px rgba(0, 0, 0, 0.04);
+  justify-content: space-between;
+  padding-inline: 2rem;
+
+  .navbar__menu-icon {
+    display: flex;
+    align-items: center;
+    svg {
+      font-size: $fs-xl;
+      color: $primary-color;
+    }
+  }
+
+  .navbar__logo-container {
+    display: none;
+  }
+
+  .navbar__secondary-container {
+    padding-inline: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .navbar__input-container {
+      display: none;
+
+      .navbar__search-icon {
+        position: absolute;
+        inset-block: 0;
+        right: 0;
+        padding-inline: 1.6rem;
+        background-color: $accent-color;
+        display: grid;
+        place-items: center;
+        border-top-right-radius: 0.8rem;
+        border-bottom-right-radius: 0.8rem;
+        cursor: pointer;
+
+        svg {
+          color: $white-color;
+          font-size: $fs-md;
+        }
+      }
+    }
+    .navbar__mobile-search-icon {
+      display: grid;
+      place-items: center;
+      margin-inline: 2rem;
+      cursor: pointer;
+
+      svg {
+        color: $accent-color;
+        font-size: $fs-lg;
+      }
+    }
+
+    .navbar__user-info {
+      display: flex;
+      gap: 1.5rem;
+      align-items: center;
+      color: $primary-color;
+      font-weight: 500;
+      p {
+        font-size: $fs-md;
+        &:first-child {
+          text-decoration: underline;
+        }
+      }
+      svg {
+        font-size: $fs-lg;
+      }
+    }
+  }
+
+  .navbar__avatar_img {
+    border-radius: 50%;
+  }
+}
+
+.caret {
+  translate: 0 25%;
+  border: 0.25em solid transparent;
+  border-top-color: $primary-color;
+}
+
+@media (min-width: 850px) {
+  .navbar__container {
+    .navbar__menu-icon {
+      display: none;
+    }
+
+    .navbar__logo-container {
+      flex-basis: 20%;
+      padding-left: 2rem;
+      display: flex;
+      align-items: center;
+      img {
+        max-width: 50%;
+      }
+    }
+
+    .navbar__secondary-container {
+      flex-basis: 80%;
+      padding-inline: 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .navbar__input-container {
+        min-width: 40%;
+        display: block;
+      }
+
+      .navbar__mobile-search-icon {
+        display: none;
+      }
+    }
+  }
+}
