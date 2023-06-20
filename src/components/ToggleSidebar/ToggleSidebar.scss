@@ -1,0 +1,109 @@
+@import "../../styles/variables";
+.toggle_sidebar__container {
+  position: fixed;
+  inset-block: 0;
+  left: 0;
+  background-color: $white-color;
+  display: flex;
+  width: 27rem;
+  flex-direction: column;
+  gap: 1rem;
+  max-height: 100%;
+  overflow: auto;
+  padding-bottom: 2rem;
+  z-index: 50;
+
+  .toggle_sidebar__logo-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 2rem;
+    padding-block: 2rem;
+    position: sticky;
+    top: 0;
+    background-color: $white-color;
+    z-index: 60;
+    box-shadow: 3px 0px 10px rgba(0, 0, 0, 0.08);
+
+    img {
+      max-width: 60%;
+    }
+    svg {
+      font-size: $fs-lg;
+      color: $primary-color;
+      cursor: pointer;
+    }
+  }
+
+  span {
+    display: flex;
+    padding-inline: 2rem;
+    gap: 1rem;
+    align-items: center;
+    opacity: 0.7;
+
+    p {
+      font-size: $fs-md;
+      color: $primary-color;
+    }
+
+    svg {
+      color: $primary-color;
+      font-size: $fs-sm;
+    }
+  }
+  .toggle_sidebar__org {
+    margin-bottom: 1.5rem;
+    opacity: 1;
+  }
+
+  .toggle_sidebar__link-group-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 2rem;
+
+    .toggle_sidebar__title {
+      color: $secondary-color;
+      padding-inline: 2rem;
+      font-size: $fs-xs;
+    }
+
+    .toggle_sidebar__link {
+      text-decoration: none;
+      display: flex;
+      padding-inline: 2rem;
+      padding-block: 1rem;
+      gap: 1rem;
+      align-items: center;
+      color: $primary-color;
+      opacity: 0.7;
+
+      img {
+      }
+
+      p {
+        font-size: $fs-md;
+      }
+    }
+    .toggle_sidebar__active-link {
+      background-color: rgba(57, 205, 204, 0.1);
+      border-left: 5px solid rgba(57, 205, 204, 1);
+      opacity: 1;
+    }
+  }
+}
+.toggle_sidebar__overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 40;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+@media (min-width: 850px) {
+  .toggle_sidebar__container {
+    display: none;
+  }
+  .toggle_sidebar__overlay {
+    display: none;
+  }
+}
