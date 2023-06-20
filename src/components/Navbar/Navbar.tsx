@@ -6,10 +6,19 @@ import { HiOutlineMagnifyingGlass } from "react-icons/hi2";
 import { BsBell } from "react-icons/bs";
 import Avatar from "../../assets/avatar.png";
 import { AiOutlineMenu } from "react-icons/ai";
-const Navbar = () => {
+
+type IProps = {
+  setToggleSidebar: React.Dispatch<React.SetStateAction<boolean>>;
+};
+
+const Navbar = ({ setToggleSidebar }: IProps) => {
+  const handleMenuClick = () => {
+    setToggleSidebar((v) => !v);
+  };
+
   return (
     <div className="navbar__container">
-      <span className="navbar__menu-icon">
+      <span className="navbar__menu-icon" onClick={handleMenuClick}>
         <AiOutlineMenu />
       </span>
       <span className="navbar__logo-container">
