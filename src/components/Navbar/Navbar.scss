@@ -96,12 +96,13 @@
     }
 
     .navbar__logo-container {
-      flex-basis: 20%;
+      flex-basis: 30rem;
+      // flex-basis: 20%;
       padding-left: 2rem;
       display: flex;
       align-items: center;
       img {
-        max-width: 70%;
+        max-width: 50%;
       }
     }
 
@@ -113,7 +114,8 @@
       justify-content: space-between;
 
       .navbar__input-container {
-        min-width: 40%;
+        // min-width: 50%;
+        width: clamp(20rem, 50%, 45rem);
         display: block;
       }
 
