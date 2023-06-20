@@ -2,7 +2,7 @@ import { ReactNode, SyntheticEvent } from "react";
 import "./TextInput.scss";
 
 interface IProps {
-  name: string;
+  name?: string;
   type?: string;
   onChange?: (e: SyntheticEvent) => void;
   placeholder: string;
