@@ -1,0 +1,17 @@
+.dashboard__page-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+
+  .dashboard__secondary-container {
+    flex-grow: 1;
+    display: flex;
+    max-height: 90vh;
+    .dashboard__link-content-container {
+      background-color: hsl(0, 0%, 97%);
+      flex-grow: 1;
+      padding: 2rem;
+      overflow: auto;
+    }
+  }
+}
