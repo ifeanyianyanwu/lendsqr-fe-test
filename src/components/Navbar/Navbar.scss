@@ -3,9 +3,10 @@
 .navbar__container {
   display: flex;
   padding-block: 2rem;
-  box-shadow: 3px 0px 20px rgba(0, 0, 0, 0.04);
+  box-shadow: 3px 0px 20px rgba(0, 0, 0, 0.08);
   justify-content: space-between;
   padding-inline: 2rem;
+  height: 10vh;
 
   .navbar__menu-icon {
     display: flex;
@@ -100,7 +101,7 @@
       display: flex;
       align-items: center;
       img {
-        max-width: 50%;
+        max-width: 70%;
       }
     }
 
