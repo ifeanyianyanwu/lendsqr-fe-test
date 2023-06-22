@@ -5,6 +5,7 @@ import Sidebar from "../../components/Sidebar/Sidebar";
 import { Route, Routes } from "react-router-dom";
 import Users from "../../components/Users/Users";
 import ToggleSidebar from "../../components/ToggleSidebar/ToggleSidebar";
+import UserDetails from "../../components/UserDetails/UserDetails";
 
 const DashBoard = () => {
   const [toggleSidebar, setToggleSidebar] = useState<boolean>(false);
@@ -17,8 +18,8 @@ const DashBoard = () => {
         {toggleSidebar && <ToggleSidebar setToggleSidebar={setToggleSidebar} />}
         <div className="dashboard__link-content-container">
           <Routes>
-            <Route path="/users" element={<Users />} />
-            <Route path="/user_details" element={"user details"} />
+            <Route path="/Users" element={<Users />} />
+            <Route path="/user_details" element={<UserDetails />} />
           </Routes>
         </div>
       </div>
