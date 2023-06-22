@@ -4,15 +4,18 @@
   height: 100vh;
 
   .dashboard__secondary-container {
-    flex-grow: 1;
     display: flex;
-    max-height: 90vh;
+    height: 90vh;
+    max-width: 100%;
+
     .dashboard__link-content-container {
       background-color: hsl(0, 0%, 97%);
-      flex-grow: 1;
       display: flex;
-      padding: 2rem;
-      overflow: auto;
+      flex-grow: 1;
+      padding: min(5%, 3rem);
+      min-width: 10rem;
+      justify-content: center;
+      overflow-y: auto;
     }
   }
 }
