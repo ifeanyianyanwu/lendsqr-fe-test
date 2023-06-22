@@ -1,0 +1,202 @@
+@import "../../styles/variables.scss";
+.table__page-container {
+  overflow: auto;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  //   border: 5px solid pink;
+  //   background-color: red;
+}
+.table__container {
+  position: relative;
+  width: fit-content;
+
+  .table__filter-form {
+    position: absolute;
+    padding: 2rem;
+    top: 5rem;
+    left: 1rem;
+    background-color: $white-color;
+    border: 1px solid rgba(84, 95, 125, 0.14);
+    box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    z-index: 10;
+
+    .table__button-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      button {
+        font-size: $fs-sm;
+        padding-block: 1rem;
+        padding-inline: 1.5rem;
+        border-radius: 5px;
+        text-transform: capitalize;
+        outline: none;
+      }
+      button[type="button"] {
+        border: 1px solid $secondary-color;
+        background: transparent;
+        color: $secondary-color;
+      }
+      button[type="submit"] {
+        background-color: $accent-color;
+        border: none;
+        color: $white-color;
+      }
+    }
+  }
+}
+.table__options-icon {
+  cursor: pointer;
+}
+.table__options-popup {
+  position: absolute;
+  width: 150px;
+  top: 5rem;
+  left: -85px;
+  z-index: 10;
+  background: #ffffff;
+  border: 1px solid rgba(84, 95, 125, 0.1);
+  box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding-block: 1rem;
+
+  span {
+    padding: 0.5rem 1.5rem;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    cursor: pointer;
+
+    &:hover {
+      background: #e4e3e3;
+    }
+
+    svg {
+      height: 14px;
+      width: 14px;
+    }
+  }
+}
+
+table {
+  box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.1);
+  background-color: $white-color;
+  width: clamp(105rem, 60vw + 10rem, 130rem);
+  border-collapse: collapse;
+  border-radius: 5px;
+}
+thead {
+  tr {
+    border: none;
+  }
+}
+tr {
+  border-bottom: 1px solid rgba(33, 63, 125, 0.3);
+}
+th,
+td {
+  padding: 2rem;
+  color: $secondary-color;
+}
+
+th {
+  span {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+  }
+  font-size: $fs-xs;
+  svg {
+    font-size: $fs-sm;
+    cursor: pointer;
+  }
+}
+td {
+  font-size: $fs-sm;
+  position: relative;
+}
+
+.table__controls-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-block: 2rem;
+  .table__display-controls {
+    font-size: $fs-sm;
+    color: $secondary-color;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+    select {
+      background-color: rgba(33, 63, 125, 0.2);
+      border-radius: 5px;
+      outline: none;
+      border: none;
+      padding: 2px;
+    }
+  }
+  .table__pagination-controls {
+    font-size: $fs-md;
+    display: flex;
+    gap: 1rem;
+    .btn {
+      font-size: $fs-md;
+      display: grid;
+      place-items: center;
+      height: 30px;
+      width: 30px;
+      color: rgba(33, 63, 125, 0.5);
+      outline: none;
+      border: none;
+    }
+    .table__direction-btn {
+      background-color: rgba(33, 63, 125, 0.2);
+      border-radius: 4px;
+    }
+    .active {
+      color: $primary-color;
+    }
+  }
+}
+.table__status {
+  padding: 0.75rem;
+  border-radius: 16px;
+  span {
+    text-transform: capitalize;
+  }
+}
+.red {
+  background-color: rgba(228, 3, 59, 0.2);
+  span {
+    color: $danger;
+  }
+}
+.inactive {
+  background-color: rgba(84, 95, 125, 0.2);
+  span {
+    color: $secondary-color;
+  }
+}
+.green {
+  background-color: rgba(57, 205, 98, 0.2);
+  span {
+    color: $success;
+  }
+}
+.yellow {
+  background-color: rgba(233, 178, 0, 0.2);
+  span {
+    color: $warning;
+  }
+}
