@@ -10,6 +10,7 @@
     .dashboard__link-content-container {
       background-color: hsl(0, 0%, 97%);
       flex-grow: 1;
+      display: flex;
       padding: 2rem;
       overflow: auto;
     }
