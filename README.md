@@ -49,7 +49,7 @@ The app has the following features:
 
 ## Tools and Technologies
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). Technologies used include:
+This project was bootstrapped with [Vite](https://github.com/vitejs/vite). Technologies used include:
 
 - React Typescript
 - React Router
