@@ -1,0 +1,28 @@
+@import "../../../styles/variables.scss";
+.container {
+  label {
+    font-size: $fs-sm;
+    color: $secondary-color;
+    text-transform: capitalize;
+  }
+}
+.input-container {
+  margin-top: 0.5rem;
+  position: relative;
+  width: 100%;
+  select {
+    width: 100%;
+    font-size: $fs-sm;
+    padding: 0.8rem;
+    border-radius: 0.8rem;
+    outline: none;
+    border: 1px solid $secondary-color;
+    text-transform: capitalize;
+
+    option {
+      font-size: $fs-sm;
+      color: $secondary-color;
+      text-transform: capitalize;
+    }
+  }
+}
