@@ -18,12 +18,12 @@ export const USERS_CARD_DATA = [
   {
     img_url: UsersWithLoansImg,
     title: "USERS WITH LOANS",
-    value: "2,453",
+    value: "12,453",
   },
   {
     img_url: UsersWithSavingsImg,
     title: "USERS WITH SAVINGS",
-    value: "2,453",
+    value: "102,453",
   },
 ];
 
