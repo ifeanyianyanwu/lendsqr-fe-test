@@ -1,5 +1,5 @@
 import "./App.scss";
-import { Routes, Route, Navigate } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import { DashBoard, Login } from "./pages";
 function App() {
   return (
