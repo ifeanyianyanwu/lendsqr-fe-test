@@ -1,0 +1,11 @@
+@import "../../styles/variables";
+.tab-page__container {
+  max-width: 100%;
+  height: fit-content;
+  .tab-page__title {
+    color: $primary-color;
+    font-size: $fs-xl;
+    text-transform: capitalize;
+    font-weight: 500;
+  }
+}
