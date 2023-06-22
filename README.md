@@ -1,11 +1,10 @@
 ## lendsqr-fe-test
 
 Test for frontend engineering candidates.
-
-![image](https://user-images.githubusercontent.com/96773767/214201567-c2e30d66-fa09-4922-84bc-33418d28eeba.png)
-![image](https://user-images.githubusercontent.com/96773767/214201642-5de55f98-e6ac-4f0f-85f8-1f0bee59c9ac.png)
-![image](https://user-images.githubusercontent.com/96773767/214201684-d36f6195-32fd-44cf-894a-9216aad1b1ef.png)
-![image](https://user-images.githubusercontent.com/96773767/214201739-6fa199c5-c365-4075-9d61-f8d0a668d3fc.png)
+![Log In](https://github.com/ifeanyianyanwu/lendsqr-fe-test/assets/75376053/c0951327-22af-4a9a-8c90-0116106c45e0)
+![Dashboard](https://github.com/ifeanyianyanwu/lendsqr-fe-test/assets/75376053/04d6f53d-00e8-405c-ae3b-d648d922371b)
+![Users - showing filters](https://github.com/ifeanyianyanwu/lendsqr-fe-test/assets/75376053/be824b61-0236-460b-baf0-2e2302ca272e)
+![Users - general details](https://github.com/ifeanyianyanwu/lendsqr-fe-test/assets/75376053/f2df0640-3605-498b-97d4-c2918908fb7d)
 
 ## Demo
 
