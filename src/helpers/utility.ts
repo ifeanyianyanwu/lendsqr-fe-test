@@ -43,3 +43,45 @@ export const STATUS = [
   { key: 3, value: "pending" },
   { key: 4, value: "blacklisted" },
 ];
+
+export type User = {
+  _id: string;
+  index: number;
+  organization: string;
+  username: string;
+  dateJoined: string;
+  status: string;
+  balance: string;
+  bankDetails: string;
+  tier: number;
+  userId: string;
+  personalInformation: {
+    fullName: string;
+    phoneNumber: string;
+    email: string;
+    bvn: number;
+    gender: string;
+    maritalStatus: string;
+    children: string;
+  };
+  educationAndEmployment: {
+    level: string;
+    employmentStatus: string;
+    sector: string;
+    duration: string;
+    officeEmail: string;
+    income: string;
+    loanRepayment: string;
+  };
+  socials: {
+    twitter: string;
+    facebook: string;
+    instagram: string;
+  };
+  guarantor: {
+    fullName: string;
+    phoneNumber: string;
+    email: string;
+    relationship: string;
+  }[];
+};
