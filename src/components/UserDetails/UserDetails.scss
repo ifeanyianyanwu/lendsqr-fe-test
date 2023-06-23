@@ -1,11 +1,203 @@
 @import "../../styles/variables";
-.tab-page__container {
-  max-width: 100%;
+.user-details__container {
+  width: 100%;
   height: fit-content;
-  .tab-page__title {
-    color: $primary-color;
-    font-size: $fs-xl;
-    text-transform: capitalize;
-    font-weight: 500;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  .user-details__back-to-users {
+    color: $secondary-color;
+    width: 100%;
+    p {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      font-size: $fs-md;
+      cursor: pointer;
+      svg {
+        font-size: $fs-lg;
+      }
+    }
+  }
+
+  .user-details__header-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2.5rem;
+
+    .user-details__button-container {
+      display: flex;
+      gap: 2rem;
+    }
+    h2 {
+      color: $primary-color;
+      font-size: $fs-xl;
+      text-transform: capitalize;
+      font-weight: 500;
+    }
+  }
+
+  .user-details__user-tab {
+    box-shadow: 3px 5px 20px 0px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    background-color: $white-color;
+    padding-inline: 2rem;
+    padding-block: 2rem 0rem;
+    border-radius: 6px;
+
+    .user-details__user-info {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      .user-details__user-avatar {
+        width: 10rem;
+        min-width: 10rem;
+        height: 10rem;
+        img {
+          max-width: 100%;
+        }
+      }
+
+      .user-details__user-name {
+        padding: 2rem;
+        min-width: 18rem;
+        h4 {
+          color: $primary-color;
+          font-size: 2.2rem;
+          font-weight: 500;
+        }
+        p {
+          color: $secondary-color;
+          font-size: $fs-sm;
+        }
+      }
+
+      .user-details__user-tier {
+        padding: 2rem;
+        border-left: 1px solid rgba(84, 95, 125, 0.884);
+        border-right: 1px solid rgba(84, 95, 125, 0.884);
+        min-width: 18rem;
+        p {
+          color: $secondary-color;
+          font-weight: 500;
+          font-size: $fs-sm;
+          text-align: center;
+        }
+        div {
+          display: flex;
+          gap: 0.5rem;
+          align-items: center;
+          justify-content: center;
+          svg {
+            color: $warning;
+            font-size: $fs-sm;
+          }
+        }
+      }
+
+      .user-details__user-balance {
+        padding: 2rem;
+        min-width: 18rem;
+        h4 {
+          color: $primary-color;
+          font-size: 2.2rem;
+          font-weight: 500;
+        }
+        p {
+          color: $secondary-color;
+          font-size: $fs-sm;
+        }
+      }
+    }
+
+    .user-details__tab {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      gap: 1rem;
+      margin-top: 2rem;
+      div {
+        padding: 1rem 1.5rem;
+        font-size: $fs-md;
+        flex-grow: 1;
+        text-align: center;
+        cursor: pointer;
+      }
+      div.active {
+        color: $accent-color;
+        border-bottom: 4px solid $accent-color;
+      }
+    }
+  }
+
+  .user-details__user-full-details {
+    box-shadow: 3px 5px 20px 0px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    background-color: $white-color;
+    padding: 0 2rem;
+    border-radius: 6px;
+
+    .user-details__info-group {
+      width: 100%;
+      border-bottom: 1px solid rgba(84, 95, 125, 0.5);
+      margin-block: 2rem;
+
+      h4 {
+        font-size: $fs-md;
+        color: $primary-color;
+        font-weight: 500;
+      }
+
+      .user-details__detail-card-container {
+        gap: 2rem;
+        margin-block: 2rem;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(min(24rem, 100%), 1fr));
+
+        .user-details__detail-card {
+          margin-block: 0.5rem;
+          display: flex;
+          flex-direction: column;
+          gap: 1rem;
+
+          .title {
+            font-size: $fs-xs;
+            color: $secondary-color;
+          }
+          .content {
+            font-size: $fs-md;
+            color: $secondary-color;
+            font-weight: 500;
+          }
+        }
+      }
+    }
+    .user-details__info-group[id="guarantor"] {
+      border: none;
+
+      .user-details__detail-card-container {
+        &:nth-child(2) {
+          border-bottom: 1px solid rgba(84, 95, 125, 0.5);
+        }
+      }
+    }
+  }
+
+  @media (max-width: 1030px) {
+    .user-details__user-info {
+      justify-content: center;
+      gap: 2rem;
+
+      .user-details__user-name,
+      .user-details__user-tier,
+      .user-details__user-balance {
+        flex-grow: 1;
+      }
+    }
+    // .user-details__deatil-card {
+    //   // flex-grow: 1;
+    // }
   }
 }
