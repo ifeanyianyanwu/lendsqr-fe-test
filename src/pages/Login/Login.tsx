@@ -1,5 +1,6 @@
 import Logo from "../../assets/logo.svg";
 import SignInImg from "../../assets/signinImage.svg";
+import Button from "../../components/ui/Button/Button";
 import TextInput from "../../components/ui/TextInput/TextInput";
 import "./Login.scss";
 import { SyntheticEvent, useState } from "react";
@@ -63,7 +64,9 @@ const Login = () => {
             </p>
           </TextInput>
           <p>FORGOT PASSWORD?</p>
-          <button type="submit">Log In</button>
+          <Button type="submit" color="accent">
+            Log In
+          </Button>
         </form>
       </div>
     </div>
