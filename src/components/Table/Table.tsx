@@ -22,6 +22,7 @@ import { FiUserCheck, FiUserX } from "react-icons/fi";
 import { useNavigate } from "react-router-dom";
 import SelectInput from "../ui/SelectInput/SelectInput";
 import { ORGANIZATIONS, STATUS } from "../../helpers/utility";
+import Button from "../ui/Button/Button";
 
 interface Item {
   id: string;
@@ -337,8 +338,8 @@ const Table = ({ initialData, itemsPerPage, columns }: TableProps) => {
   };
   return (
     <div className="table__page-container">
-      {/* Filter inputs */}
       <div className="table__container">
+        {/* Filter Form */}
         {filterFormShown && (
           <form
             onSubmit={handleFilterSubmit}
@@ -390,10 +391,12 @@ const Table = ({ initialData, itemsPerPage, columns }: TableProps) => {
               value={filterValues.status}
             />
             <div className="table__button-container">
-              <button type="button" onClick={handleReset}>
+              <Button onClick={handleReset} color="transparent">
                 Reset
-              </button>
-              <button type="submit">submit</button>
+              </Button>
+              <Button color="accent" type="submit">
+                Submit
+              </Button>
             </div>
 
             {/* Add more inputs for each column you want to filter */}
