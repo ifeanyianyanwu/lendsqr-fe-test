@@ -134,7 +134,6 @@ const UserDetails = () => {
 
   useEffect(() => {
     setUserDetails(JSON.parse(localStorage.userData));
-    console.log(JSON.parse(localStorage.userData));
   }, []);
 
   return (
@@ -242,7 +241,11 @@ const UserDetails = () => {
           <div key={key} className="user-details__info-group" id="guarantor">
             <h4>{info.heading}</h4>
             {info.titles.map((item) => (
-              <div className="user-details__detail-card-container" id="special">
+              <div
+                className="user-details__detail-card-container"
+                id="special"
+                key={item.id}
+              >
                 {item.title.map((title, index) => (
                   <div key={index} className="user-details__detail-card">
                     <p className="title">{title.subtitle}</p>
