@@ -8,6 +8,7 @@ import ToggleSidebar from "../../components/ToggleSidebar/ToggleSidebar";
 import UserDetails from "../../components/UserDetails/UserDetails";
 
 const DashBoard = () => {
+  //Sidebar toggle state
   const [toggleSidebar, setToggleSidebar] = useState<boolean>(false);
 
   return (
