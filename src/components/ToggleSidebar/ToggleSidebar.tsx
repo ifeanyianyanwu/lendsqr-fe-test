@@ -4,7 +4,7 @@ import { Links } from "../../helpers/sidebar-data";
 import { NavLink } from "react-router-dom";
 import DashboardIcon from "../../assets/dashboard.png";
 import MainIcon from "../../assets/switch-organization.png";
-import Logo from "../../assets/logo.svg";
+import Logo from "../../assets/logo.png";
 import { IoIosArrowDown } from "react-icons/io";
 import { HiXMark } from "react-icons/hi2";
 

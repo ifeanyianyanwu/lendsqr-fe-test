@@ -1,4 +1,4 @@
-import Logo from "../../assets/logo.svg";
+import Logo from "../../assets/logo.png";
 import SignInImg from "../../assets/signinImage.svg";
 import Button from "../../components/ui/Button/Button";
 import TextInput from "../../components/ui/TextInput/TextInput";

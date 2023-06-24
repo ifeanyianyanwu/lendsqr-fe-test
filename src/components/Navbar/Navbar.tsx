@@ -1,6 +1,6 @@
 import React from "react";
 import "./Navbar.scss";
-import Logo from "../../assets/logo.svg";
+import Logo from "../../assets/logo.png";
 import TextInput from "../ui/TextInput/TextInput";
 import { HiOutlineMagnifyingGlass } from "react-icons/hi2";
 import { BsBell } from "react-icons/bs";
