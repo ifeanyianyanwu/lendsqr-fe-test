@@ -1,7 +1,7 @@
 @import "../../styles/variables";
 
 //Mobile First View
-.page-container {
+.sign-in__page-container {
   position: relative;
   display: flex;
   height: 100vh;
@@ -54,7 +54,7 @@
     }
   }
 }
-.password-show-btn {
+.sign-in__password-show-btn {
   color: $accent-color;
   font-size: $fs-xs;
   position: absolute;
@@ -66,7 +66,7 @@
 
 //Desktop View
 @media (min-width: 850px) {
-  .page-container {
+  .sign-in__page-container {
     padding: 5rem;
   }
   .sign-in__image {
