@@ -9,6 +9,7 @@
   //   background-color: red;
 }
 .table__container {
+  margin-inline: auto;
   position: relative;
   width: fit-content;
 
@@ -92,7 +93,7 @@
 table {
   box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.1);
   background-color: $white-color;
-  width: clamp(105rem, 60vw + 10rem, 130rem);
+  width: clamp(100rem, 60vw + 10rem, 130rem);
   border-collapse: collapse;
   border-radius: 5px;
 }

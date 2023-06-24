@@ -3,9 +3,13 @@
 .users__cards-container {
   padding-inline: 1rem;
   display: grid;
+  place-content: center;
   gap: 2rem;
   grid-template-columns: repeat(auto-fit, minmax(min(20rem, 100%), 1fr));
   margin-block: 2rem;
+  width: clamp(10rem, 60vw + 12rem, 130rem);
+  max-width: 100%;
+  margin-inline: auto;
 }
 
 .red {
