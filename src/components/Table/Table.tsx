@@ -237,7 +237,7 @@ const Table = ({ initialData, itemsPerPage, columns }: TableProps) => {
       </button>
     );
 
-    if (totalPages > 6) {
+    if (totalPages >= 6) {
       // add second page button
       buttons.push(
         <button
@@ -264,7 +264,7 @@ const Table = ({ initialData, itemsPerPage, columns }: TableProps) => {
     }
 
     // Add second to last page button
-    if (totalPages > 6) {
+    if (totalPages >= 6) {
       buttons.push(
         <button
           key={totalPages - 1}
@@ -277,7 +277,7 @@ const Table = ({ initialData, itemsPerPage, columns }: TableProps) => {
     }
 
     // Add last page button
-    if (totalPages > 2) {
+    if (totalPages >= 2) {
       buttons.push(
         <button
           key={totalPages}
