@@ -13,6 +13,7 @@ type IProps = {
 };
 
 const ToggleSidebar = ({ setToggleSidebar }: IProps) => {
+  //handle close button click
   const handleCloseBtnClick = () => {
     setToggleSidebar((v) => !v);
   };
