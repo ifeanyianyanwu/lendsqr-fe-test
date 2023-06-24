@@ -1,7 +1,6 @@
 import React, {
   useState,
   SyntheticEvent,
-  ReactNode,
   useEffect,
   FormEvent,
   useRef,
@@ -70,7 +69,7 @@ const Table = ({ initialData, itemsPerPage, columns }: TableProps) => {
   const formRef: FormRef = useRef(null);
   const optionPopupRef: MutableRefObject<HTMLSpanElement | null> = useRef(null);
 
-  //Handle closing filter form and options popup when you click outside of it
+  //Handle closing filter form and options popup when you click outside of it or press esc key
   useEffect(() => {
     const handleOutsideClick = (event: MouseEvent) => {
       if (formRef.current && !formRef.current.contains(event.target as Node)) {
@@ -398,8 +397,6 @@ const Table = ({ initialData, itemsPerPage, columns }: TableProps) => {
                 Submit
               </Button>
             </div>
-
-            {/* Add more inputs for each column you want to filter */}
           </form>
         )}
         <table>
