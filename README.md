@@ -8,7 +8,7 @@ Test for frontend engineering candidates.
 
 ## Demo
 
-<!-- [View Live Site](https://finest-co-furniture.vercel.app/) -->
+[View Live Site](https://ifeanyi-anyanwu-lendsqr-fe-test.netlify.app/)
 
 ## Description
 
