@@ -1,5 +1,5 @@
 @import "../../../styles/variables.scss";
-.container {
+.text-input__container {
   label {
     font-size: $fs-sm;
     color: $secondary-color;
@@ -7,7 +7,7 @@
     font-weight: 500;
   }
 }
-.input-container {
+.text-input__input-container {
   margin-top: 0.5rem;
   position: relative;
   width: 100%;

@@ -23,9 +23,9 @@ const TextInput = ({
   id,
 }: IProps) => {
   return (
-    <div className="container">
+    <div className="text-input__container">
       {label && <label htmlFor={id || name}>{label}</label>}
-      <div className="input-container">
+      <div className="text-input__input-container">
         <input
           type={type || "text"}
           onChange={onChange}
