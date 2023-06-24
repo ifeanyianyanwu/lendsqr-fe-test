@@ -10,6 +10,8 @@ import { AiFillStar, AiOutlineStar } from "react-icons/ai";
 const UserDetails = () => {
   const [userDetails, setUserDetails] = useState<User | null>(null);
   const navigate = useNavigate();
+
+  //Personal Information Data
   const PersonalInformation = [
     {
       heading: "Personal Information",
@@ -37,6 +39,8 @@ const UserDetails = () => {
       ],
     },
   ];
+
+  //Education And Employment Data
   const EducationAndEmployment = [
     {
       heading: "Education and Employment",
@@ -72,6 +76,8 @@ const UserDetails = () => {
       ],
     },
   ];
+
+  //Socials Data
   const Socials = [
     {
       heading: "Socials",
@@ -82,6 +88,8 @@ const UserDetails = () => {
       ],
     },
   ];
+
+  //Guarantor Data
   const Guarantor = [
     {
       heading: "Guarantor",
@@ -132,6 +140,7 @@ const UserDetails = () => {
     },
   ];
 
+  //Set local state to user data in local storage
   useEffect(() => {
     setUserDetails(JSON.parse(localStorage.userData));
   }, []);
