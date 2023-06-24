@@ -12,6 +12,7 @@ type UserData = {
 };
 
 const Login = () => {
+  //component state
   const [userCredentials, setUserCredentials] = useState<UserData>({
     email: "",
     password: "",
@@ -19,26 +20,35 @@ const Login = () => {
   const [passwordType, setPasswordType] = useState("password");
   const navigate = useNavigate();
 
+  //handle input change
   const handleInputChange = (e: SyntheticEvent) => {
     const { name, value } = e.target as HTMLInputElement;
     setUserCredentials((prev) => ({ ...prev, [name]: value }));
   };
 
+  //handle password show button toggle
   const handleShowButtonClick = () => {
     setPasswordType((prev) => (prev === "password" ? "text" : "password"));
   };
 
+  //handle login form submit
   const handleSubmit = (e: SyntheticEvent) => {
     e.preventDefault();
-    if (!userCredentials.email || !userCredentials.password) {
-      alert("Please enter a valid Username and Password");
+
+    //handle if inputs are empty throw an error
+    if (!userCredentials.email) {
+      alert("Please enter a valid Email");
+      return;
+    }
+    if (!userCredentials.password) {
+      alert("Please enter a valid Password");
       return;
     }
     navigate("/dashboard/users");
   };
 
   return (
-    <div className="page-container">
+    <div className="sign-in__page-container">
       <div className="sign-in__image">
         <img src={Logo} alt="logo" />
         <img src={SignInImg} alt="Sign In Image" />
@@ -59,7 +69,10 @@ const Login = () => {
             placeholder="Password"
             onChange={handleInputChange}
           >
-            <p className="password-show-btn" onClick={handleShowButtonClick}>
+            <p
+              className="sign-in__password-show-btn"
+              onClick={handleShowButtonClick}
+            >
               {passwordType === "password" ? "SHOW" : "HIDE"}
             </p>
           </TextInput>
