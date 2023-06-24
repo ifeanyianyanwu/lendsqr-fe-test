@@ -1,4 +1,3 @@
-import React from "react";
 import "./Sidebar.scss";
 import { Links } from "../../helpers/sidebar-data";
 import { NavLink } from "react-router-dom";
@@ -19,7 +18,7 @@ const Sidebar = () => {
         <p>Dashboard</p>
       </span>
       {Links.map((item) => (
-        <div key={item.title} className="link-group-container">
+        <div key={item.title} className="sidebar__link-group-container">
           <p className="sidebar__title">{item.title}</p>
           {item.links.map((link) => (
             <NavLink
