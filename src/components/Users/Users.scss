@@ -11,28 +11,3 @@
   max-width: 100%;
   margin-inline: auto;
 }
-
-.red {
-  background-color: rgba(228, 3, 59, 0.2);
-  span {
-    color: $danger;
-  }
-}
-.inactive {
-  background-color: rgba(84, 95, 125, 0.2);
-  span {
-    color: $secondary-color;
-  }
-}
-.green {
-  background-color: rgba(57, 205, 98, 0.2);
-  span {
-    color: $success;
-  }
-}
-.yellow {
-  background-color: rgba(233, 178, 0, 0.2);
-  span {
-    color: $warning;
-  }
-}
