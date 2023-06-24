@@ -259,10 +259,10 @@ const Table = ({ initialData, itemsPerPage, columns }: TableProps) => {
           3
         </button>
       );
-
+    }
+    if (totalPages >= 3) {
       buttons.push(<span key="ellipsis2">...</span>);
     }
-
     // Add second to last page button
     if (totalPages >= 6) {
       buttons.push(
