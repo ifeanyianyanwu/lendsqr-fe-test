@@ -20,11 +20,11 @@ interface Option {
 
 const SelectInput = ({ name, onChange, options, label, value, id }: IProps) => {
   return (
-    <div className="container">
+    <div className="select-input__container">
       {label && <label htmlFor={id || name}>{label}</label>}
-      <div className="input-container">
+      <div className="select-input__input-container">
         <select name={name} id={id || name} onChange={onChange} value={value}>
-          {options?.map((item, index) => (
+          {options?.map((item) => (
             <option
               value={item.value}
               key={item.key}
