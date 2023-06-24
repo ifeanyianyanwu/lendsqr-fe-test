@@ -7,11 +7,12 @@ import { BsBell } from "react-icons/bs";
 import Avatar from "../../assets/avatar.png";
 import { AiOutlineMenu } from "react-icons/ai";
 
-type IProps = {
+interface IProps {
   setToggleSidebar: React.Dispatch<React.SetStateAction<boolean>>;
-};
+}
 
 const Navbar = ({ setToggleSidebar }: IProps) => {
+  //handle toggling of sidebar
   const handleMenuClick = () => {
     setToggleSidebar((v) => !v);
   };
