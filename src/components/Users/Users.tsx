@@ -7,6 +7,7 @@ import Card from "../../layout/Card/Card";
 import TabPage from "../../layout/TabPage/TabPage";
 
 const Users = () => {
+  //columns data for table component
   const columns = [
     { value: "ORGANIZATION" },
     { value: "USERNAME" },
@@ -17,6 +18,7 @@ const Users = () => {
     { value: " " },
   ];
 
+  // map data to columns present in table component
   const data = usersData?.map((item) => ({
     id: item._id,
     organization: item.organization,
