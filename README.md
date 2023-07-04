@@ -1,4 +1,4 @@
-## lendsqr-fe-test
+
 
 A mini and scalable Admin dashboard.
 ![Log In](https://github.com/ifeanyianyanwu/lendsqr-fe-test/assets/75376053/c0951327-22af-4a9a-8c90-0116106c45e0)
@@ -10,17 +10,6 @@ A mini and scalable Admin dashboard.
 
 [View Live Site](https://ifeanyi-anyanwu-lendsqr-fe-test.netlify.app/)
 
-## Creating pages
-
-4 pages were created, namely;
-
-<ol>
-  <li>Login</li> 
-  <li>Dashboard</li> 
-  <li>User page</li> 
-  <li>User details page</li>
- </ol>
- 
 ## Specifications
 
 User pages pulls data from a mock api with 500 records
