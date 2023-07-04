@@ -8,7 +8,7 @@ A mini and scalable Admin dashboard.
 
 ## Demo
 
-[View Live Site](https://ifeanyi-anyanwu-lendsqr-fe-test.netlify.app/)
+[View Live Site](https://ifeanyi-anyanwu-mini-dashboard.netlify.app/)
 
 ## Specifications
 
