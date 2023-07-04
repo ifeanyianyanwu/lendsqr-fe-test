@@ -1,6 +1,6 @@
 ## lendsqr-fe-test
 
-Test for frontend engineering candidates.
+A mini and scalable Admin dashboard.
 ![Log In](https://github.com/ifeanyianyanwu/lendsqr-fe-test/assets/75376053/c0951327-22af-4a9a-8c90-0116106c45e0)
 ![Dashboard](https://github.com/ifeanyianyanwu/lendsqr-fe-test/assets/75376053/04d6f53d-00e8-405c-ae3b-d648d922371b)
 ![Users - showing filters](https://github.com/ifeanyianyanwu/lendsqr-fe-test/assets/75376053/be824b61-0236-460b-baf0-2e2302ca272e)
@@ -9,12 +9,6 @@ Test for frontend engineering candidates.
 ## Demo
 
 [View Live Site](https://ifeanyi-anyanwu-lendsqr-fe-test.netlify.app/)
-
-## Description
-
-At Lendsqr, many of our lenders use web apps to reach over half a million customers. At this scale, we use React with TypeScript and SCSS as its frontend software development stack which allows us to rapidly ideate and release features rapidly and reliably.
-
-To prepare for you as a possible frontend engineer at Lendsqr, we would require that you create an application using React with SCSS. This test will allow us to assess your strengths and weaknesses.
 
 ## Creating pages
 
@@ -29,13 +23,12 @@ To prepare for you as a possible frontend engineer at Lendsqr, we would require 
  
 ## Specifications
 
-User pages should pull data from a mock api with 500 records
+User pages pulls data from a mock api with 500 records
 <br>
-It should use a local storage or indexedDB to store and retrieve user details on the user details page.
+It uses local storage to store and retrieve user details on the user details page.
 <br>
-The page must be mobile responsive
+The website is mobile responsive
 <br>
-The pages are created in the page file "src" component of this application.
 
 ## Features
 
